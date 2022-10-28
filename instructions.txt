@@ -1,0 +1,8 @@
+# run docker compose
+docker-compose up
+# migrations
+php artisan make:migration create_tenants_table --path=database/migrations/system
+php artisan  migrate  --path=database/migrations/system  --database=system
+php artisan make:model Tenant
+php artisan make:middleware TenantsMiddleware
+

@@ -13,5 +13,14 @@ php artisan make:command Tenants/migrateCommand
 php artisan tenants:migrate
 php artisan make:command SystemMigrateCommand
 php artisan system:migrate
+//======== seeders ======================
+php artisan make:seeder landlord/TenantsSeeder
+php artisan make:seeder tenants/UserSeeder
+php artisan db:seed --class=database/seeders/landlord/TenantsSeeder
+php artisan make:command Tenants/SeederCommand
+ php artisan make:command Landlord/SeederCommand
+
+
+
 
 

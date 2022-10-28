@@ -5,4 +5,5 @@ php artisan make:migration create_tenants_table --path=database/migrations/syste
 php artisan  migrate  --path=database/migrations/system  --database=system
 php artisan make:model Tenant
 php artisan make:middleware TenantsMiddleware
+php artisan make:controller HomePageController
 

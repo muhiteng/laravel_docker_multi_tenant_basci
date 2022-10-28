@@ -6,4 +6,12 @@ php artisan  migrate  --path=database/migrations/system  --database=system
 php artisan make:model Tenant
 php artisan make:middleware TenantsMiddleware
 php artisan make:controller HomePageController
+//======= clear cache ====================
+php artisan optimize
+//================ commands ===================
+php artisan make:command Tenants/migrateCommand
+php artisan tenants:migrate
+php artisan make:command SystemMigrateCommand
+php artisan system:migrate
+
 
